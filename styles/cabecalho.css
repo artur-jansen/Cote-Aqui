@@ -1,4 +1,7 @@
 .cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     background-color: white;
     color: var(--roxo);
@@ -6,4 +9,25 @@
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
     font-weight: 600;
     font-size: 15px;
+    gap: 1em;
+}
+
+.inputBuscar{
+    padding: 2px;
+    padding-left: 4px;
+    border-radius: 8px;
+    border: 1px solid var(--roxo);
+    font-weight: 600;
+    width: 26%;
+}
+
+.inputBuscar:focus{
+    transition: 1s;
+    background-color: var(--lilas);
+    outline: none;
+}
+
+.inputBuscar:focus::placeholder{
+    transition: 1s;
+    opacity: 0;
 }

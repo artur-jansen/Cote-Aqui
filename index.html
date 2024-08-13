@@ -17,9 +17,10 @@
   <main class="dados">
     <header class="cabecalho">
       <h2>Verifique a cotação das principais moedas do mundo:</h2>
+      <input type="search" class="inputBuscar" id="searchInput" placeholder="Busque a moeda de interesse" >
     </header>
 
-    <article class="dadosDolar">
+    <article id="grafico-card" data-moeda="dolar" class="dadosDolar">
       <div class="grafico">
         <div class="grafico__titulo">
           <span class="grafico__ilustracao-dolar"></span>
@@ -41,7 +42,7 @@
       </div>
     </article>
 
-    <article class="dadosEuro">
+    <article id="grafico-card" data-moeda="euro" class="dadosEuro">
       <div class="grafico">
         <div class="grafico__titulo">
           <span class="grafico__ilustracao-dolar"></span>
@@ -63,7 +64,7 @@
       </div>
     </article>
 
-    <article class="dadosLibra">
+    <article id="grafico-card" data-moeda="libra" class="dadosLibra">
       <div class="grafico">
         <div class="grafico__titulo">
           <span class="grafico__ilustracao-dolar"></span>
@@ -85,7 +86,7 @@
       </div>
     </article>
 
-    <article class="dadosIene">
+    <article id="grafico-card" data-moeda="iene" class="dadosIene">
       <div class="grafico">
         <div class="grafico__titulo">
           <span class="grafico__ilustracao-dolar"></span>
@@ -107,7 +108,7 @@
       </div>
     </article>
 
-    <article class="dadosBitcoin">
+    <article id="grafico-card" data-moeda="bitcoin" class="dadosBitcoin">
       <div class="grafico">
         <div class="grafico__titulo">
           <span class="grafico__ilustracao-dolar"></span>
@@ -129,7 +130,7 @@
       </div>
     </article>
 
-    <article class="dadosEthereum">
+    <article id="grafico-card" data-moeda="ethereum" class="dadosEthereum">
       <div class="grafico">
         <div class="grafico__titulo">
           <span class="grafico__ilustracao-dolar"></span>
@@ -156,6 +157,7 @@
   </main>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./script/scripts.js" type="module"></script>
+  <script src="./script/search.js"></script>
 </body>
 
 </html>
